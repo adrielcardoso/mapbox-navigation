@@ -62,8 +62,8 @@ public class MapboxNavigationManager extends ReactContextBaseJavaModule implemen
     @ReactMethod
     public void takeMeToWH() {
 
-        Point origin = Point.fromLngLat(-77.03613, 38.90992);
-        Point destination = Point.fromLngLat(-77.0365, 38.8977);
+        Point origin = Point.fromLngLat(-48.668479, -26.903535);
+        Point destination = Point.fromLngLat(-48.683519, -26.928310);
 
         NavigationRoute.builder(context)
                 .accessToken(context.getString(R.string.mapbox_access_token))

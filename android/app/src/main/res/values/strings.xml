@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">RNMapboxNavigation</string>
-    <string name="mapbox_access_token">{MAP_BOX_TOKEN}</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiYWRyaWVsY2FyZG9zbyIsImEiOiJjam81eGN3bDgwN2N4M3BtZHkyeWppb3Z1In0.2KjraJLi6eHQGYubEFaPtQ</string>
 </resources>
