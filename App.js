@@ -57,17 +57,35 @@ export default class App extends Component<Props> {
     const { granted, fromLat, fromLong, toLat, toLong } = this.state;
     return (
       <View style={styles.container}>
-        <NavigationView
-                    style={styles.navigation}
-                    destination={{
-                      lat: toLat,
-                      long: toLong
-                    }}
-                    origin={{
-                      lat: fromLat,
-                      long: fromLong
-                    }}
-                  />
+          {granted && (
+            <NavigationView
+              style={styles.navigation}
+              destination={{
+                lat: toLat,
+                long: toLong
+              }}
+              origin={{
+                lat: fromLat,
+                long: fromLong
+              }}
+            />
+          )}
+          <View style={styles.subcontainer}>
+            <Text style={styles.welcome}>Another View !</Text>
+            {Platform.OS === "android" && (
+              <Button
+                title={"Start Navigation - NativeModule"}
+                onPress={() => {
+                  NativeModules.MapboxNavigation.navigate(
+                    fromLat,
+                    fromLong,
+                    toLat,
+                    toLong
+                  );
+                }}
+              />
+            )}
+          </View>
       </View>
     );
   }
