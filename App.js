@@ -17,7 +17,6 @@ import {
 } from "react-native";
 import NavigationView from "./NavigationView";
 import { NativeModules } from "react-native";
-import MapboxView from "./MapboxView";
 
 type Props = {};
 export default class App extends Component<Props> {

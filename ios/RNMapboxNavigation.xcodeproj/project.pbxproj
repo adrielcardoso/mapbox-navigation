@@ -25,6 +25,9 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		29E5708921FA2B8400BE43DA /* MapboxNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E5708721FA2B8300BE43DA /* MapboxNavigationView.swift */; };
 		29E5708A21FA2B8400BE43DA /* Mapb oxNavigationViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E5708821FA2B8400BE43DA /* Mapb oxNavigationViewManager.m */; };
+		461A384822DCF75500E4CBC6 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 461A384722DCF75500E4CBC6 /* Mapbox.framework */; };
+		461A384922DCF75500E4CBC6 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 461A384722DCF75500E4CBC6 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		461A385122DCF7A400E4CBC6 /* libRCTMGL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 461A385022DCF78E00E4CBC6 /* libRCTMGL.a */; };
 		631292F15B37D4DCDD879C25 /* Pods_RNMapboxNavigation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 791D15E9F6B438CCD9B08022 /* Pods_RNMapboxNavigation.framework */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
@@ -262,6 +265,13 @@
 			remoteGlobalIDString = 3D3CD9181DE5FBD800167DC4;
 			remoteInfo = "jschelpers-tvOS";
 		};
+		461A384F22DCF78E00E4CBC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 461A384B22DCF78E00E4CBC6 /* RCTMGL.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C4D1443D1F4E16F600396F26;
+			remoteInfo = RCTMGL;
+		};
 		46218CA922D912D6002BCA47 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46218C9A22D912D5002BCA47 /* Pods.xcodeproj */;
@@ -369,6 +379,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		461A384A22DCF75500E4CBC6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				461A384922DCF75500E4CBC6 /* Mapbox.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTActionSheet.xcodeproj; path = "../node_modules/react-native/Libraries/ActionSheetIOS/RCTActionSheet.xcodeproj"; sourceTree = "<group>"; };
@@ -394,6 +418,8 @@
 		29E5708721FA2B8300BE43DA /* MapboxNavigationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapboxNavigationView.swift; sourceTree = "<group>"; };
 		29E5708821FA2B8400BE43DA /* Mapb oxNavigationViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Mapb oxNavigationViewManager.m"; sourceTree = "<group>"; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		461A384722DCF75500E4CBC6 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = "../node_modules/@react-native-mapbox-gl/maps/ios/Mapbox.framework"; sourceTree = "<group>"; };
+		461A384B22DCF78E00E4CBC6 /* RCTMGL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTMGL.xcodeproj; path = "../node_modules/@react-native-mapbox-gl/maps/ios/RCTMGL.xcodeproj"; sourceTree = "<group>"; };
 		46218C9A22D912D5002BCA47 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
@@ -416,6 +442,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				461A385122DCF7A400E4CBC6 /* libRCTMGL.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -423,6 +450,7 @@
 				00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */,
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
 				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
+				461A384822DCF75500E4CBC6 /* Mapbox.framework in Frameworks */,
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
@@ -571,6 +599,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		461A384C22DCF78E00E4CBC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				461A385022DCF78E00E4CBC6 /* libRCTMGL.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		46218C9B22D912D5002BCA47 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -618,6 +654,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				461A384B22DCF78E00E4CBC6 /* RCTMGL.xcodeproj */,
 				5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -646,6 +683,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				461A384722DCF75500E4CBC6 /* Mapbox.framework */,
 				46218C9A22D912D5002BCA47 /* Pods.xcodeproj */,
 				13B07FAE1A68108700A75B9A /* RNMapboxNavigation */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -708,6 +746,8 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				A526DA137C5780FA1B576F66 /* [CP] Embed Pods Frameworks */,
+				461A384A22DCF75500E4CBC6 /* Embed Frameworks */,
+				461A385222DCF7C900E4CBC6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -782,6 +822,10 @@
 				{
 					ProductGroup = 78C398B11ACF4ADC00677621 /* Products */;
 					ProjectRef = 78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */;
+				},
+				{
+					ProductGroup = 461A384C22DCF78E00E4CBC6 /* Products */;
+					ProjectRef = 461A384B22DCF78E00E4CBC6 /* RCTMGL.xcodeproj */;
 				},
 				{
 					ProductGroup = 00C302D41ABCB9D200DB3ED1 /* Products */;
@@ -1041,6 +1085,13 @@
 			remoteRef = 3DAD3EAE1DF850E9000B6D8A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		461A385022DCF78E00E4CBC6 /* libRCTMGL.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTMGL.a;
+			remoteRef = 461A384F22DCF78E00E4CBC6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		46218CAA22D912D6002BCA47 /* MapboxCoreNavigation.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -1181,6 +1232,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		461A385222DCF7C900E4CBC6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework/strip-frameworks.sh\"\n";
 		};
 		A526DA137C5780FA1B576F66 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1345,6 +1413,21 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = V86BZ442JV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MapboxCoreNavigation\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MapboxDirections.swift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MapboxGeocoder.swift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MapboxMobileEvents\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MapboxNavigation\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MapboxSpeech\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Polyline\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Solar\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Turf\"",
+					"\"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic\"",
+					"\"${PODS_ROOT}/MapboxNavigationNative\"",
+					"$(PROJECT_DIR)/../node_modules/@react-native-mapbox-gl/maps/ios",
+				);
 				INFOPLIST_FILE = RNMapboxNavigation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1369,6 +1452,21 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V86BZ442JV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MapboxCoreNavigation\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MapboxDirections.swift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MapboxGeocoder.swift\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MapboxMobileEvents\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MapboxNavigation\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/MapboxSpeech\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Polyline\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Solar\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Turf\"",
+					"\"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic\"",
+					"\"${PODS_ROOT}/MapboxNavigationNative\"",
+					"$(PROJECT_DIR)/../node_modules/@react-native-mapbox-gl/maps/ios",
+				);
 				INFOPLIST_FILE = RNMapboxNavigation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
