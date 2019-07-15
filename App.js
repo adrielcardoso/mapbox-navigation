@@ -17,6 +17,7 @@ import {
 } from "react-native";
 import NavigationView from "./NavigationView";
 import { NativeModules } from "react-native";
+import MapboxView from "./MapboxView";
 
 type Props = {};
 export default class App extends Component<Props> {
@@ -70,22 +71,6 @@ export default class App extends Component<Props> {
               }}
             />
           )}
-          <View style={styles.subcontainer}>
-            <Text style={styles.welcome}>Another View !</Text>
-            {Platform.OS === "android" && (
-              <Button
-                title={"Start Navigation - NativeModule"}
-                onPress={() => {
-                  NativeModules.MapboxNavigation.navigate(
-                    fromLat,
-                    fromLong,
-                    toLat,
-                    toLong
-                  );
-                }}
-              />
-            )}
-          </View>
       </View>
     );
   }
