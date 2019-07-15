@@ -15,19 +15,19 @@ export default class MapScreen extends React.Component
     location: [-48.669154, -26.903866],
   }
 
-  // renderAnnotations() {
-  //   return (
-  //     <MapboxGL.PointAnnotation
-  //       id='rocketseat'
-  //       coordinate={[-48.669154, -26.903866]}
-  //     >
-  //       <View style={styles.annotationContainer}>
-  //         <View style={styles.annotationFill} />
-  //       </View>
-  //       <MapboxGL.Callout title='Rocketseat House' />
-  //     </MapboxGL.PointAnnotation>
-  //   )
-  // }
+  renderAnnotations() {
+    return (
+      <MapboxGL.PointAnnotation
+        id='rocketseat'
+        coordinate={[-48.669154, -26.903866]}
+      >
+        <View style={styles.annotationContainer}>
+          <View style={styles.annotationFill} />
+        </View>
+        <MapboxGL.Callout title='Rocketseat House' />
+      </MapboxGL.PointAnnotation>
+    )
+  }
 
   render() {
     const zooLevel  = 16;
@@ -67,13 +67,13 @@ export default class MapScreen extends React.Component
                     borderRadius: 4,
                   }}>
                     <Text style={{
-                      fontWeight: 600, padding:6,
+                      padding:6,
                       paddingRight: 20
                     }}> Olá, Joao Silva</Text>
                   </View>
               </View>
 
-            {/* <MapboxGL.MapView
+            <MapboxGL.MapView
               ref={c => this.map = c}
               rotateEnabled={rotateEnabled}
               logoEnabled={logoEnabled}
@@ -94,7 +94,12 @@ export default class MapScreen extends React.Component
               styleURL={MapboxGL.StyleURL.Light}
             >
                 {this.renderAnnotations()}
-            </MapboxGL.MapView> */}
+            </MapboxGL.MapView>
+            <Button
+                  title="Fazer Viagem"
+                  type="clear"
+                  onPress={() => this.props.mContext.props.navigation.navigate("NivagationScreen")}
+                />
       </View>
     );
   }

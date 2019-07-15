@@ -82,7 +82,6 @@ export default class InitScreen extends React.Component
                                               onPress={() => this.props.navigation.navigate('LoginScreen')}
                                               titleStyle={{
                                                 color: "#000",
-                                                fontWeight: 500
                                               }}
                                             />
                                         </View>
@@ -101,7 +100,6 @@ export default class InitScreen extends React.Component
                                               onPress={() => this.props.navigation.navigate('CreateScreen')}
                                               titleStyle={{
                                                 color: "#FEA621",
-                                                fontWeight: 500
                                               }}
                                             />
                                         </View>

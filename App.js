@@ -6,13 +6,17 @@ import MapScreen from "./src/MapScreen";
 import InitScreen from "./src/InitScreen";
 import CreateScreen from "./src/CreateScreen";
 import PermissionScreen from "./src/PermissionScreen";
+import NivagationScreen from "./src/component/navigation/NivagationScreen";
 
 const AppNavigator = createStackNavigator({
   InitScreen: {
     screen: InitScreen,
   },
   PermissionScreen:{
-    screen: PermissionScreen,
+    screen: HomeScreen,
+  },
+  NivagationScreen:{
+    screen: NivagationScreen,
   },
   LoginScreen: {
     screen: LoginScreen,

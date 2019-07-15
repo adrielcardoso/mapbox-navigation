@@ -87,7 +87,6 @@ export default class CreateScreen extends React.Component
                                                                   textStyles={{
                                                                     color: '#000',
                                                                     fontSize:18,
-                                                                    fontWeight:600
                                                                   }} 
                                                                   thickness={2}
                                                                   lineColor={'#000'} />
@@ -171,7 +170,6 @@ export default class CreateScreen extends React.Component
                                   onPress={() => this.actionCreate()}
                                   titleStyle={{
                                     color: '#FDB621',
-                                    fontWeight: 500
                                   }}
                                 />
                           </View>

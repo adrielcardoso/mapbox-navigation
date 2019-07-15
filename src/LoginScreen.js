@@ -84,7 +84,6 @@ export default class LoginScreen extends React.Component
                                                               textStyles={{
                                                                 color: '#000',
                                                                 fontSize:18,
-                                                                fontWeight:600
                                                               }} 
                                                               thickness={2}
                                                               lineColor={'#000'} />
@@ -123,7 +122,6 @@ export default class LoginScreen extends React.Component
                           onPress={() => this.actionLogin()}
                           titleStyle={{
                             color: '#FDB621',
-                            fontWeight: 500
                           }}
                         />
                         <TouchableOpacity 

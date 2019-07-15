@@ -10,13 +10,13 @@ import {
     AsyncStorage,
 } from 'react-native';
 import { scale, scaleVertical, SESSION_USER } from './util/scale';
-import TouchableScale from 'react-native-touchable-scale';  
-import LinearGradient from 'react-native-linear-gradient';  
+// import TouchableScale from 'react-native-touchable-scale';  
+// import LinearGradient from 'react-native-linear-gradient';  
 import { ListItem, Header, Button } from 'react-native-elements';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { StackActions, NavigationActions } from 'react-navigation';
 import Permissions from 'react-native-permissions'
-import { ScrollView } from 'react-native-gesture-handler';
+// import { ScrollView } from 'react-native-gesture-handler';
 
 export default class PermissionScreen extends React.Component
 {
@@ -93,7 +93,7 @@ export default class PermissionScreen extends React.Component
           backgroundColor={'#FD9321'}
           centerComponent={{ text: 'PERMISSÕES', style: { color: '#fff' } }}
         />
-        <ScrollView contentContainerStyle={{
+        {/* <ScrollView contentContainerStyle={{
           paddingBottom:50
         }}>
             <View>
@@ -214,7 +214,7 @@ export default class PermissionScreen extends React.Component
                         disabled={this.state.disabled}
                       />
             </View>
-        </ScrollView>
+        </ScrollView> */}
       </View>
   )
 }

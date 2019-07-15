@@ -134,7 +134,6 @@ export default function Menu({ onItemSelected }) {
                 />
                 <Text style={{
                   paddingTop: 20,
-                  fontWeight: '600'
                 }}>Adriel Cardoso</Text>
             </View>
             <View style={{
@@ -159,7 +158,6 @@ export default function Menu({ onItemSelected }) {
                             color='#915511' />}
                           titleStyle={{
                             color: '#915511',
-                            fontWeight: '500'
                           }}
                           title={l.name}
                         />
@@ -190,7 +188,6 @@ export default function Menu({ onItemSelected }) {
                       />}
                     titleStyle={{
                       color: '#915511',
-                      fontWeight: '500'
                     }}
                     title={l.name}
                   />
